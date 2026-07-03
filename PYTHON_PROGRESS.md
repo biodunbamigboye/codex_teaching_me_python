@@ -10,9 +10,9 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 
 ## Current Status
 
-- Current phase: Phase 1 - Python Foundations
-- Current lesson: Lesson 002 - Lists, Dictionaries, And Loops
-- Current assignment: `lessons/002_collections/learning_inventory.py`
+- Current phase: Phase 2 - Functions And Modules
+- Current lesson: Lesson 003 - Functions And Return Values
+- Current assignment: `lessons/003_functions/study_calculator.py`
 - Submission status: assigned
 
 ## Learning Defaults
@@ -51,6 +51,9 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 | 2026-07-03 | Lesson 001 accepted | Script runs and includes required variables, list usage, calculation, f-strings, comments, and reflection. | Accepted with polish notes. Next time, send reflection in the chat unless the task asks for it inside the script. |
 | 2026-07-03 | Long-term AI path added | Roadmap expanded to include Data Science, Machine Learning, AI applications, and LLM orchestration. | Good ambition. We will not skip foundations; the AI path comes after Python and backend confidence. |
 | 2026-07-03 | RAG path added | Roadmap expanded to include Retrieval-Augmented Generation as its own future phase. | RAG will come after AI application basics, with focus on retrieval quality, grounding, and source-aware answers. |
+| 2026-07-03 | Lesson 002 first attempt submitted | Script runs and prints learner data, five topics, joined topic names, and pace status. | Good recovery from the `join` error. Cleanup required: print the learner profile more readably, remove duplicated `daily_minutes`, fix style spacing, and submit reflection. |
+| 2026-07-03 | Lesson 002 second attempt submitted | Script runs, learner profile is more readable, `if` now reads from `learner["daily_minutes"]`, and reflection was submitted. | Near pass. One required fix: `len(topics)` is being printed as literal text instead of evaluated. |
+| 2026-07-03 | Lesson 002 accepted | Script runs and correctly uses a learner dictionary, list of topic dictionaries, `enumerate`, `len`, `join`, and `if`. | Accepted with polish notes. Next focus: functions that return values instead of doing everything at top level. |
 
 ## Evaluations
 
@@ -102,25 +105,61 @@ Score: 91 / 100
 
 Teacher decision: Lesson 001 accepted. Move to Lesson 002.
 
+### 2026-07-03 - Lesson 002 First Attempt
+
+Score: 82 / 100
+
+- Correctness: 35 / 40 - `learner` is a dictionary, `topics` is a list of dictionaries, the loop prints numbered topics, `len`, `join`, and `if` are used, and the script runs successfully.
+- Readability: 15 / 20 - output works, but `print(f"{learner}")` and `print(len(topics))` are too raw for a user-facing script.
+- Pythonic style: 16 / 20 - good beginner fix using `topic_names.append(topic["name"])`; improve spacing around dictionary colons and keyword arguments.
+- Edge cases: 8 / 10 - the `if` should read from `learner["daily_minutes"]` instead of creating a second `daily_minutes` variable.
+- Reflection and explanation: 8 / 10 - the output was submitted, but the required familiar/strange reflection was not included.
+
+Teacher decision: cleanup required before Lesson 002 can be accepted.
+
+### 2026-07-03 - Lesson 002 Second Attempt
+
+Score: 90 / 100
+
+- Correctness: 37 / 40 - the script runs, uses the required dictionary/list structures, loops through topics, joins topic names, and uses `if` correctly. `len(topics)` is currently printed as literal text.
+- Readability: 17 / 20 - learner output is clearer, though it is a bit dense as one long line.
+- Pythonic style: 18 / 20 - good use of dictionary key access and `enumerate(..., start=1)`.
+- Edge cases: 8 / 10 - the script now avoids duplicating `daily_minutes`; one output line still does not evaluate the count.
+- Reflection and explanation: 10 / 10 - strong reflection on dictionary access versus JavaScript dot notation and PHP associative arrays.
+
+Teacher decision: one-line fix required before acceptance.
+
+### 2026-07-03 - Lesson 002 Accepted
+
+Score: 93 / 100
+
+- Correctness: 40 / 40 - the script runs successfully and uses the required dictionary, list of dictionaries, loop, `len`, `join`, and `if` logic.
+- Readability: 17 / 20 - output is understandable; the learner profile line is still dense and could be split across multiple lines.
+- Pythonic style: 17 / 20 - good use of `enumerate(..., start=1)` and dictionary key access; improve spacing around dictionary colons in future work.
+- Edge cases: 9 / 10 - the code reads `daily_minutes` from `learner`, which avoids duplicate state.
+- Reflection and explanation: 10 / 10 - strong reflection on Python dictionary access versus JavaScript dot notation and PHP associative arrays.
+
+Teacher decision: Lesson 002 accepted. Move to Lesson 003.
+
 ## Current Assignment
 
-Lesson 002 is assigned in `PYTHON_LEARNING_INSTRUCTIONS.md`.
+Lesson 003 is assigned in `PYTHON_LEARNING_INSTRUCTIONS.md`.
 
 Expected file:
 
 ```text
 lessons/
-  002_collections/
-    learning_inventory.py
+  003_functions/
+    study_calculator.py
 ```
 
-The next task focuses on Python lists, dictionaries, loops, `len`, `join`, and simple `if` logic.
+The next task focuses on defining functions, passing arguments, returning values, and calling functions from top-level script code.
 
 ## Next Teacher Action
 
-After the learner submits Lesson 002, Codex should:
+After the learner submits Lesson 003, Codex should:
 
 - run or inspect the submitted script
 - evaluate it using the rubric
 - update this progress file with the result
-- assign corrections or Lesson 003
+- assign corrections or Lesson 004

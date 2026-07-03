@@ -479,3 +479,67 @@ Evaluation focus:
 - The loop prints all topics clearly.
 - `len`, `join`, and `if` are used correctly.
 - Output is readable and beginner-clean.
+
+## Third Practical Task
+
+### Lesson 003: Functions And Return Values
+
+Create this folder and file:
+
+```text
+lessons/
+  003_functions/
+    study_calculator.py
+```
+
+Write a Python script that moves repeated logic into functions.
+
+Requirements:
+
+- Define a dictionary named `learner` with:
+  - `full_name`
+  - `daily_minutes`
+  - `current_lesson`
+  - `primary_goal`
+- Define a list named `topics`.
+- Each item in `topics` must be a dictionary with:
+  - `name`
+  - `status`
+  - `difficulty`
+- Include at least five topics.
+- Define these functions:
+  - `calculate_weekly_minutes(daily_minutes)` returns daily minutes multiplied by 7.
+  - `format_topic(index, topic)` returns a readable topic line like `1. Variables - completed - beginner`.
+  - `count_topics_by_status(topics, status)` returns how many topics match the given status.
+  - `get_pace_message(daily_minutes)` returns a message based on the study pace.
+- Call each function from the main script area and print the returned results.
+- At least two functions must use `return`; do not make every function only print.
+- Use a loop to print formatted topics by calling `format_topic`.
+- Use `count_topics_by_status` at least twice with different statuses.
+- Include three short comments comparing Python functions with PHP or JavaScript functions.
+- Do not use classes.
+- Do not use imports.
+- Do not use user input.
+
+Example command to run it:
+
+```bash
+python3 lessons/003_functions/study_calculator.py
+```
+
+When you submit, tell Codex:
+
+- the command you ran
+- whether it worked
+- any error message if it failed
+- one thing that felt familiar from PHP or JavaScript
+- one thing that felt strange in Python
+
+Evaluation focus:
+
+- Script runs without errors.
+- Functions are defined with `def`.
+- Function names use `snake_case`.
+- Functions return useful values.
+- Arguments are passed correctly.
+- The top-level script calls the functions and prints readable output.
