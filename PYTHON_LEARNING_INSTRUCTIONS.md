@@ -12,7 +12,7 @@ The style is teacher strict:
 - You may be asked to rewrite work when the lesson has not landed yet.
 - Mistakes will be treated as useful signals, not failure.
 
-The goal is not to memorize Python syntax. The goal is to become fluent enough to build real backend projects with FastAPI, then Django.
+The goal is not to memorize Python syntax. The goal is to become fluent enough to build real backend projects with FastAPI, then Django, then grow into AI, Machine Learning, Data Science, and LLM orchestration.
 
 ## Study Rhythm
 
@@ -193,6 +193,105 @@ PHP/JS comparisons:
 - Django is closer to Laravel than to Express.
 - Django conventions are strong; fighting them usually creates unnecessary pain.
 - The admin is a major productivity feature, not an afterthought.
+
+### Phase 8: Data Science Foundations
+
+Goal: use Python to explore, clean, and explain data.
+
+Topics:
+
+- Working with notebooks without becoming dependent on them
+- Reading CSV and JSON datasets
+- Basic statistics for developers
+- Data cleaning habits
+- Tables, rows, columns, and missing values
+- Simple charts and visual explanations
+- Turning messy data into useful questions
+
+PHP/JS comparisons:
+
+- Data work in Python often happens through specialized libraries instead of hand-written loops everywhere.
+- The mindset is exploratory: inspect, transform, verify, then explain.
+- Readable data code matters because analysis can be wrong even when the code runs.
+
+### Phase 9: Machine Learning Foundations
+
+Goal: understand the basic ML workflow before relying on libraries blindly.
+
+Topics:
+
+- What models, features, labels, and predictions mean
+- Train/test split
+- Classification vs regression
+- Evaluation metrics
+- Overfitting and underfitting
+- Simple supervised learning projects
+- Saving and loading trained models
+
+PHP/JS comparisons:
+
+- ML code is still software engineering: inputs, outputs, tests, and maintainability matter.
+- Accuracy alone is not enough; evaluation must match the real problem.
+- A model can be technically impressive and still useless if the data or goal is poor.
+
+### Phase 10: AI Application Engineering
+
+Goal: build practical AI-powered Python applications.
+
+Topics:
+
+- Calling model APIs from Python
+- Prompt structure and prompt testing
+- Streaming responses
+- Tool/function calling concepts
+- Retrieval-augmented generation basics
+- Embeddings and vector search concepts
+- Safety checks, logging, and cost awareness
+
+PHP/JS comparisons:
+
+- AI app code often looks like normal API integration, but failure modes are less predictable.
+- Prompts are part of the system design, not casual strings.
+- Good AI apps need boring backend discipline: validation, retries, logs, tests, and clear boundaries.
+
+### Phase 11: LLM Orchestration And Agents
+
+Goal: coordinate LLMs, tools, memory, retrieval, and workflows without losing control of the system.
+
+Topics:
+
+- When orchestration is useful and when plain code is better
+- Chains, agents, tools, and workflows
+- Structured outputs
+- Evaluation datasets
+- Human-in-the-loop review
+- Long-running tasks
+- Observability for AI behavior
+- Building portfolio-grade AI backend projects
+
+PHP/JS comparisons:
+
+- Orchestration should not become a replacement for understanding the underlying Python code.
+- Agent-like systems need stronger guardrails than ordinary request/response APIs.
+- The best AI systems combine deterministic code with model calls only where the model adds value.
+
+## Learning Order Guardrail
+
+AI, ML, Data Science, and LLM orchestration are now part of the path, but they are not the next topic.
+
+The order is intentional:
+
+1. Python foundations
+2. Functions, modules, files, and errors
+3. Testing and project hygiene
+4. FastAPI
+5. Django
+6. Data Science
+7. Machine Learning
+8. AI applications
+9. LLM orchestration
+
+This prevents tool-chasing. The future AI path will be much faster if the Python basics become boring first.
 
 ## Lesson Format
 

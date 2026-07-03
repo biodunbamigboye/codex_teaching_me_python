@@ -19,6 +19,7 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 
 - Pace: daily 45 minutes
 - Web path: FastAPI first, Django after FastAPI confidence
+- Long-term path: AI, ML, Data Science, and LLM orchestration after Python and backend fundamentals
 - Feedback style: teacher strict
 
 ## Strengths Observed
@@ -26,6 +27,7 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 - Strong PHP background
 - Strong JavaScript background
 - Backend learning goal is clear
+- Long-term AI/ML/Data Science goal is now explicit
 - Willing to learn publicly and iteratively
 
 ## Concepts To Watch
@@ -36,6 +38,7 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 - Lists vs arrays
 - Dictionaries vs PHP associative arrays and JS objects
 - Avoiding unnecessary classes too early
+- Avoiding advanced AI tooling before Python foundations are strong
 
 ## Progress Log
 
@@ -46,6 +49,7 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 | 2026-07-03 | Lesson 001 second attempt submitted | Script runs and prints six lines using f-strings. | Good improvement. Cleanup required: use `weekly_minutes` in the output, improve wording/capitalization, and submit the short reflection. |
 | 2026-07-03 | Lesson 001 third attempt submitted | Script runs, prints `weekly_minutes`, uses required variables, list, f-strings, and comparison comments. | Python requirements mostly met. Final polish required: improve two output sentences and submit the short reflection. |
 | 2026-07-03 | Lesson 001 accepted | Script runs and includes required variables, list usage, calculation, f-strings, comments, and reflection. | Accepted with polish notes. Next time, send reflection in the chat unless the task asks for it inside the script. |
+| 2026-07-03 | Long-term AI path added | Roadmap expanded to include Data Science, Machine Learning, AI applications, and LLM orchestration. | Good ambition. We will not skip foundations; the AI path comes after Python and backend confidence. |
 
 ## Evaluations
 

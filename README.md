@@ -2,7 +2,7 @@
 
 This is a public learning journey by Biodun Bamigboye, a PHP and JavaScript developer learning Python with Codex as a strict but practical teacher.
 
-The goal is to move from complete Python beginner to building useful backend projects with FastAPI first, then Django.
+The goal is to move from complete Python beginner to building useful backend projects with FastAPI first, then Django, and later into AI, Machine Learning, Data Science, and LLM orchestration.
 
 ## How This Repo Works
 
@@ -17,6 +17,7 @@ This repo will intentionally show the journey: first attempts, corrections, clea
 - Pace: daily 45-minute sessions
 - First web framework target: FastAPI
 - Later web framework target: Django
+- Long-term direction: AI, ML, Data Science, and LLM orchestration
 - Feedback style: teacher strict
 
 ## Learning Philosophy
@@ -30,6 +31,7 @@ The focus is practical:
 - explain mistakes clearly
 - rewrite when needed
 - track progress publicly
+- avoid rushing into advanced AI tooling before Python fundamentals are strong
 
 ## License
 
