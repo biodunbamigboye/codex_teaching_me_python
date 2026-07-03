@@ -12,7 +12,7 @@ The style is teacher strict:
 - You may be asked to rewrite work when the lesson has not landed yet.
 - Mistakes will be treated as useful signals, not failure.
 
-The goal is not to memorize Python syntax. The goal is to become fluent enough to build real backend projects with FastAPI, then Django, then grow into AI, Machine Learning, Data Science, and LLM orchestration.
+The goal is not to memorize Python syntax. The goal is to become fluent enough to build real backend projects with FastAPI, then Django, then grow into AI, Machine Learning, Data Science, Retrieval-Augmented Generation, and LLM orchestration.
 
 ## Study Rhythm
 
@@ -244,7 +244,7 @@ Topics:
 - Prompt structure and prompt testing
 - Streaming responses
 - Tool/function calling concepts
-- Retrieval-augmented generation basics
+- Retrieval-Augmented Generation awareness
 - Embeddings and vector search concepts
 - Safety checks, logging, and cost awareness
 
@@ -254,7 +254,30 @@ PHP/JS comparisons:
 - Prompts are part of the system design, not casual strings.
 - Good AI apps need boring backend discipline: validation, retries, logs, tests, and clear boundaries.
 
-### Phase 11: LLM Orchestration And Agents
+### Phase 11: Retrieval-Augmented Generation
+
+Goal: build AI systems that answer from supplied knowledge instead of relying only on model memory.
+
+Topics:
+
+- What RAG is and when it is useful
+- Document loading and chunking
+- Embeddings
+- Vector search
+- Metadata filtering
+- Retrieval quality
+- Grounded answers with source references
+- Common RAG failure modes
+- Evaluating retrieval and answer quality
+- Building a small FastAPI-backed RAG project
+
+PHP/JS comparisons:
+
+- RAG is not just "chat with a PDF"; it is a search and context pipeline around an LLM.
+- The retrieval layer should be testable like normal backend code.
+- Bad chunking, weak metadata, or poor retrieval can make a good model produce weak answers.
+
+### Phase 12: LLM Orchestration And Agents
 
 Goal: coordinate LLMs, tools, memory, retrieval, and workflows without losing control of the system.
 
@@ -277,7 +300,7 @@ PHP/JS comparisons:
 
 ## Learning Order Guardrail
 
-AI, ML, Data Science, and LLM orchestration are now part of the path, but they are not the next topic.
+AI, ML, Data Science, RAG, and LLM orchestration are now part of the path, but they are not the next topic.
 
 The order is intentional:
 
@@ -289,7 +312,8 @@ The order is intentional:
 6. Data Science
 7. Machine Learning
 8. AI applications
-9. LLM orchestration
+9. RAG
+10. LLM orchestration
 
 This prevents tool-chasing. The future AI path will be much faster if the Python basics become boring first.
 
