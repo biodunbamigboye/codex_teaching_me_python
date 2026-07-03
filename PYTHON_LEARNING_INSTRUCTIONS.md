@@ -294,3 +294,65 @@ Evaluation focus:
 - f-strings are used correctly.
 - A list is used for language strengths.
 - The solution stays simple.
+
+## Second Practical Task
+
+### Lesson 002: Lists, Dictionaries, And Loops
+
+Create this folder and file:
+
+```text
+lessons/
+  002_collections/
+    learning_inventory.py
+```
+
+Write a Python script that tracks your learning inventory.
+
+Requirements:
+
+- Define a dictionary named `learner` with:
+  - `full_name`
+  - `daily_minutes`
+  - `current_phase`
+  - `primary_goal`
+- Define a list named `topics`.
+- Each item in `topics` must be a dictionary with:
+  - `name`
+  - `status`
+  - `difficulty`
+- Include at least four topics, such as `Variables`, `Strings`, `Lists`, and `Dictionaries`.
+- Print the learner profile using f-strings.
+- Print the number of topics using `len(topics)`.
+- Loop through `topics` and print each topic as a numbered list.
+- Use `join` to print all topic names in one sentence.
+- Use an `if` statement:
+  - if `daily_minutes` is at least `45`, print that the daily pace is strong
+  - otherwise, print that the daily pace needs more time
+- Include three short comments comparing Python lists/dictionaries with PHP arrays or JavaScript arrays/objects.
+- Do not use classes.
+- Do not use imports.
+- Do not use user input.
+
+Example command to run it:
+
+```bash
+python3 lessons/002_collections/learning_inventory.py
+```
+
+When you submit, tell Codex:
+
+- the command you ran
+- whether it worked
+- any error message if it failed
+- one thing that felt familiar from PHP or JavaScript
+- one thing that felt strange in Python
+
+Evaluation focus:
+
+- Script runs without errors.
+- `learner` is a dictionary.
+- `topics` is a list of dictionaries.
+- The loop prints all topics clearly.
+- `len`, `join`, and `if` are used correctly.
+- Output is readable and beginner-clean.
