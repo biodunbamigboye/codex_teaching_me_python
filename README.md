@@ -8,9 +8,32 @@ The goal is to move from complete Python beginner to building useful backend pro
 
 - `PYTHON_LEARNING_INSTRUCTIONS.md` contains the course path, lesson style, task rules, and evaluation rubric.
 - `PYTHON_PROGRESS.md` tracks completed work, feedback, corrections, and the next assignment.
-- Future lesson folders will contain practical Python tasks and rewrites.
+- `docs/LESSON_TEMPLATE.md` defines the standard documentation format for each lesson.
+- Each lesson folder contains the practical Python task and a lesson-level `README.md`.
 
 This repo will intentionally show the journey: first attempts, corrections, cleaner rewrites, and progress over time. That makes it useful both for the learner and for other PHP/JavaScript developers trying to cross into Python.
+
+## Lesson Folder Standard
+
+Each lesson folder should document:
+
+- the assignment
+- the command that was run
+- the final successful output
+- attempt history and teacher notes
+- the accepted version
+- reflection from PHP and JavaScript experience
+
+Example:
+
+```text
+lessons/
+  001_foundations/
+    README.md
+    profile_card.py
+```
+
+This keeps the repo useful as both a personal learning log and a reusable path for other PHP/JavaScript developers learning Python.
 
 ## Current Defaults
 

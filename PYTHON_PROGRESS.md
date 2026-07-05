@@ -11,8 +11,9 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 ## Current Status
 
 - Current phase: Phase 2 - Functions And Modules
-- Current lesson: Lesson 003 - Functions And Return Values
-- Current assignment: `lessons/003_functions/study_calculator.py`
+- Current lesson: Lesson 004 - Modules And Imports
+- Current assignment: `lessons/004_modules/main.py`
+- Current lesson notes: `lessons/004_modules/README.md`
 - Submission status: assigned
 
 ## Learning Defaults
@@ -54,6 +55,10 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 | 2026-07-03 | Lesson 002 first attempt submitted | Script runs and prints learner data, five topics, joined topic names, and pace status. | Good recovery from the `join` error. Cleanup required: print the learner profile more readably, remove duplicated `daily_minutes`, fix style spacing, and submit reflection. |
 | 2026-07-03 | Lesson 002 second attempt submitted | Script runs, learner profile is more readable, `if` now reads from `learner["daily_minutes"]`, and reflection was submitted. | Near pass. One required fix: `len(topics)` is being printed as literal text instead of evaluated. |
 | 2026-07-03 | Lesson 002 accepted | Script runs and correctly uses a learner dictionary, list of topic dictionaries, `enumerate`, `len`, `join`, and `if`. | Accepted with polish notes. Next focus: functions that return values instead of doing everything at top level. |
+| 2026-07-03 | Lesson documentation standard added | `docs/LESSON_TEMPLATE.md`, lesson READMEs for Lessons 001-003 | Each lesson should now carry its own assignment, run evidence, attempt history, accepted version, reflection, and next step. |
+| 2026-07-05 | Lesson 003 first attempt submitted | Script runs and uses four functions with return values, a topics loop, status counting, and pace messaging. | Strong first attempt. Cleanup required: number topics from 1, use `snake_case`, remove the semicolon, and correct the comment about Python typing. |
+| 2026-07-05 | Lesson 003 second attempt submitted | Script runs and fixes `snake_case`, semicolon usage, and the typing comment. | Near pass. One bug remains: `index - 1` makes the displayed topic numbers start at 0 again. |
+| 2026-07-05 | Lesson 003 accepted | Script runs and correctly uses functions, arguments, return values, status counting, pace messaging, and human-friendly numbering. | Accepted with polish notes. Next focus: split reusable functions into modules and import them. |
 
 ## Evaluations
 
@@ -141,25 +146,61 @@ Score: 93 / 100
 
 Teacher decision: Lesson 002 accepted. Move to Lesson 003.
 
+### 2026-07-05 - Lesson 003 First Attempt
+
+Score: 86 / 100
+
+- Correctness: 36 / 40 - the script runs, defines the required functions, returns values, counts statuses, and calls the functions from the main script. The topic numbering starts at 0 instead of 1.
+- Readability: 17 / 20 - output is understandable, though `done beginner` should be formatted more clearly as `done - beginner`.
+- Pythonic style: 15 / 20 - function names are good, but `dailyMinutes` should be `daily_minutes`, `count+=1` should be spaced as `count += 1`, and `return count;` should not use a semicolon.
+- Edge cases: 8 / 10 - the status counter works for matching statuses; the display number should be human-friendly.
+- Reflection and explanation: 10 / 10 - strong comparison of `return` across PHP, JavaScript, and Python, plus a useful question about scope and reading outside variables.
+
+Teacher decision: cleanup required before Lesson 003 can be accepted.
+
+### 2026-07-05 - Lesson 003 Second Attempt
+
+Score: 91 / 100
+
+- Correctness: 38 / 40 - the script runs and the function structure works. The topic display still starts at 0 because `format_topic(index - 1, topic)` subtracts from the human-friendly index.
+- Readability: 17 / 20 - output is understandable; topic formatting should include a separator between status and difficulty.
+- Pythonic style: 17 / 20 - `daily_minutes` and semicolon cleanup are fixed. Keep improving spacing: `count += 1`, `for index, topic`, and `print(...)`.
+- Edge cases: 9 / 10 - status counting and pace logic are working.
+- Reflection and explanation: 10 / 10 - previous reflection remains strong and relevant.
+
+Teacher decision: one-line fix required before acceptance.
+
+### 2026-07-05 - Lesson 003 Accepted
+
+Score: 95 / 100
+
+- Correctness: 40 / 40 - the script runs and meets the required function, argument, return value, loop, counting, and pace-message behavior.
+- Readability: 18 / 20 - output is clear and topic formatting is improved.
+- Pythonic style: 18 / 20 - `snake_case`, `return`, and spacing are much improved; keep tightening spacing around commas and function calls.
+- Edge cases: 9 / 10 - status counting works for the statuses used.
+- Reflection and explanation: 10 / 10 - strong reflection on function returns and variable scope compared with PHP and JavaScript.
+
+Teacher decision: Lesson 003 accepted. Move to Lesson 004.
+
 ## Current Assignment
 
-Lesson 003 is assigned in `PYTHON_LEARNING_INSTRUCTIONS.md`.
+Lesson 004 is assigned in `PYTHON_LEARNING_INSTRUCTIONS.md`.
 
 Expected file:
 
 ```text
 lessons/
-  003_functions/
-    study_calculator.py
+  004_modules/
+    main.py
 ```
 
-The next task focuses on defining functions, passing arguments, returning values, and calling functions from top-level script code.
+The next task focuses on moving reusable functions into another file and importing them into a main script.
 
 ## Next Teacher Action
 
-After the learner submits Lesson 003, Codex should:
+After the learner submits Lesson 004, Codex should:
 
 - run or inspect the submitted script
 - evaluate it using the rubric
 - update this progress file with the result
-- assign corrections or Lesson 004
+- assign corrections or Lesson 005

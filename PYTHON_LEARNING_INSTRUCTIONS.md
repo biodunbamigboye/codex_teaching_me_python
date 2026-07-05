@@ -34,8 +34,23 @@ Each practical task should eventually live in its own lesson folder:
 ```text
 lessons/
   001_foundations/
+    README.md
     profile_card.py
 ```
+
+Use `docs/LESSON_TEMPLATE.md` when starting or documenting a lesson.
+
+Each lesson `README.md` should include:
+
+- the lesson goal
+- concepts practiced
+- PHP and JavaScript bridges
+- assignment requirements
+- command run and successful output
+- attempt history
+- accepted version
+- reflection
+- next step
 
 For each submitted task:
 
@@ -44,7 +59,7 @@ For each submitted task:
 - Share any error message exactly as it appeared.
 - Expect feedback on correctness, readability, Python style, and whether the solution matches the assignment.
 
-Do not hide mistakes. The public record of fixes is part of the learning value.
+Do not hide mistakes. The public record of fixes is part of the learning value. If an early attempt is not preserved as code, summarize it honestly in the lesson `README.md` from the progress log.
 
 ## Roadmap
 
@@ -543,3 +558,58 @@ Evaluation focus:
 - Functions return useful values.
 - Arguments are passed correctly.
 - The top-level script calls the functions and prints readable output.
+
+## Fourth Practical Task
+
+### Lesson 004: Modules And Imports
+
+Create this folder and files:
+
+```text
+lessons/
+  004_modules/
+    main.py
+    study_helpers.py
+```
+
+Write a Python program that splits reusable functions into a helper module.
+
+Requirements:
+
+- In `study_helpers.py`, define:
+  - `calculate_weekly_minutes(daily_minutes)`
+  - `format_topic(index, topic)`
+  - `count_topics_by_status(topics, status)`
+  - `get_pace_message(daily_minutes)`
+- In `main.py`, define the `learner` dictionary and `topics` list.
+- Import the helper functions from `study_helpers.py`.
+- Call each imported function from `main.py`.
+- Print readable output from `main.py`.
+- Use `count_topics_by_status` at least twice with different statuses.
+- Use a loop with `enumerate(topics, start=1)` and `format_topic`.
+- Include three short comments comparing Python imports/modules with PHP includes/namespaces or JavaScript imports.
+- Do not use classes.
+- Do not use external packages.
+- Do not use user input.
+
+Example command to run it:
+
+```bash
+python3 lessons/004_modules/main.py
+```
+
+When you submit, tell Codex:
+
+- the command you ran
+- whether it worked
+- any error message if it failed
+- one thing that felt familiar from PHP or JavaScript
+- one thing that felt strange in Python
+
+Evaluation focus:
+
+- `main.py` runs without errors.
+- Helper functions live in `study_helpers.py`.
+- `main.py` imports and calls the helper functions.
+- Reusable logic is not duplicated in `main.py`.
+- Output is readable and beginner-clean.
