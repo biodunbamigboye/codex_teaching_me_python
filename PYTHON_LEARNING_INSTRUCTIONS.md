@@ -613,3 +613,108 @@ Evaluation focus:
 - `main.py` imports and calls the helper functions.
 - Reusable logic is not duplicated in `main.py`.
 - Output is readable and beginner-clean.
+
+## Fifth Practical Task
+
+### Lesson 005: Default Arguments, Scope, And The Standard Library
+
+Create this folder and file:
+
+```text
+lessons/
+  005_standard_library/
+    study_planner.py
+```
+
+Write a small study planner that uses function defaults and Python's standard library.
+
+Requirements:
+
+- Import `date` and `timedelta` from `datetime`.
+- Define a module-level constant named `DEFAULT_DAILY_MINUTES` with the value `45`.
+- Define `calculate_total_minutes(study_days, daily_minutes=DEFAULT_DAILY_MINUTES)`.
+- Define `build_study_message(topic, daily_minutes=DEFAULT_DAILY_MINUTES)`.
+- Define `get_target_date(days_from_today=7)` and return `date.today() + timedelta(days=days_from_today)`.
+- Define `main()` and keep all print calls inside it.
+- Call one function using its default argument.
+- Call the same function again with a different keyword argument, such as `daily_minutes=60`.
+- Print a seven-day total and a fourteen-day target date.
+- Use `if __name__ == "__main__":` to call `main()`.
+- Do not modify `DEFAULT_DAILY_MINUTES` inside a function.
+- Include three short comments comparing Python defaults, scope, or the standard library with PHP or JavaScript.
+- Do not use classes, external packages, or user input.
+
+Example command:
+
+```bash
+python3 lessons/005_standard_library/study_planner.py
+```
+
+When you submit, tell Codex:
+
+- the command you ran
+- whether it worked
+- any error message if it failed
+- one thing that felt familiar from PHP or JavaScript
+- one thing that felt strange in Python
+
+Evaluation focus:
+
+- The script runs without errors.
+- Default and keyword arguments are used correctly.
+- The module constant is read but not changed by functions.
+- `date` and `timedelta` are used correctly.
+- Printing happens inside `main()`.
+- The entry-point guard calls `main()`.
+
+## Sixth Practical Task
+
+### Lesson 006: Reading And Writing JSON Files
+
+Create this folder and files:
+
+```text
+lessons/
+  006_json_files/
+    study_report.py
+    study_sessions.json
+```
+
+Write a program that reads study sessions from JSON, calculates a summary, and writes that summary to another JSON file.
+
+Requirements:
+
+- Import `json` and `Path` from `pathlib`.
+- In `study_sessions.json`, create a JSON array containing at least three session objects.
+- Give every session `topic`, `minutes`, and `completed` fields.
+- Define `INPUT_FILE` and `OUTPUT_FILE` using `Path(__file__).with_name(...)`.
+- Define `load_sessions(file_path)` using `with file_path.open(..., encoding="utf-8")` and `json.load()`.
+- Define `calculate_total_minutes(sessions)` and return the total with `sum()`.
+- Define `build_summary(sessions)` and return a dictionary containing `session_count`, `completed_count`, and `total_minutes`.
+- Define `save_summary(file_path, summary)` using `json.dump(summary, file, indent=2)`.
+- Define `main()`, load the sessions, print each session clearly, print the summary values, and save the summary to `study_summary.json`.
+- Use `if __name__ == "__main__":` to call `main()`.
+- Include three short comments comparing JSON/file handling with PHP or JavaScript.
+- Do not use classes, external packages, user input, or `try`/`except` yet.
+
+Example command:
+
+```bash
+python3 lessons/006_json_files/study_report.py
+```
+
+When you submit, tell Codex:
+
+- the command you ran
+- whether it worked
+- any error message if it failed
+- one thing that felt familiar from PHP or JavaScript
+- one thing that felt strange in Python
+
+Evaluation focus:
+
+- The input JSON is valid and contains the required fields.
+- The script runs from the repository root without path errors.
+- JSON is read and written through context managers.
+- The summary values are calculated from the input rather than hard-coded.
+- `study_summary.json` is valid JSON with the required summary fields.

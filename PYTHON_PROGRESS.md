@@ -10,10 +10,10 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 
 ## Current Status
 
-- Current phase: Phase 2 - Functions And Modules
-- Current lesson: Lesson 004 - Modules And Imports
-- Current assignment: `lessons/004_modules/main.py`
-- Current lesson notes: `lessons/004_modules/README.md`
+- Current phase: Phase 3 - Files, Errors, And Data
+- Current lesson: Lesson 006 - Reading And Writing JSON Files
+- Current assignment: `lessons/006_json_files/study_report.py`
+- Current lesson notes: `lessons/006_json_files/README.md`
 - Submission status: assigned
 
 ## Learning Defaults
@@ -59,6 +59,11 @@ Repository: https://github.com/biodunbamigboye/codex_teaching_me_python
 | 2026-07-05 | Lesson 003 first attempt submitted | Script runs and uses four functions with return values, a topics loop, status counting, and pace messaging. | Strong first attempt. Cleanup required: number topics from 1, use `snake_case`, remove the semicolon, and correct the comment about Python typing. |
 | 2026-07-05 | Lesson 003 second attempt submitted | Script runs and fixes `snake_case`, semicolon usage, and the typing comment. | Near pass. One bug remains: `index - 1` makes the displayed topic numbers start at 0 again. |
 | 2026-07-05 | Lesson 003 accepted | Script runs and correctly uses functions, arguments, return values, status counting, pace messaging, and human-friendly numbering. | Accepted with polish notes. Next focus: split reusable functions into modules and import them. |
+| 2026-07-15 | Lesson 004 first attempt submitted | `main.py` runs and imports working helpers from `study_helpers.py`; topic numbering and status counting work. | Core module split is correct. Cleanup required: remove unrelated geometry code, use one import style, correct comparison comments, and tighten Python spacing. |
+| 2026-07-15 | Lesson 004 second attempt submitted | Script runs; imports are grouped, unrelated geometry code is removed, comparison comments are accurate, and reflection is complete. | Near pass. Standard spacing around commas, colons, function calls, and top-level function definitions is still required. |
+| 2026-07-15 | Lesson 004 accepted | Both files compile and run; module boundaries, imports, spacing, comments, and reflection meet the lesson requirements. | Accepted. Next focus: default and keyword arguments, scope, standard-library dates, and the `__main__` entry point. |
+| 2026-07-15 | Lesson 005 first attempt submitted | Script compiles and runs; defaults, a keyword argument, the module constant, date arithmetic, `main()`, and the entry-point guard all work. | Strong behavior. Cleanup required for whitespace, import and guard style, output units, comparison accuracy, and the separate reflection. |
+| 2026-07-15 | Lesson 005 accepted | Script compiles and runs with clean whitespace; defaults, keyword arguments, scope, date arithmetic, `main()`, entry-point behavior, comments, and reflection are correct. | Accepted. Phase 2 is complete; move to JSON files and data processing in Phase 3. |
 
 ## Evaluations
 
@@ -182,25 +187,86 @@ Score: 95 / 100
 
 Teacher decision: Lesson 003 accepted. Move to Lesson 004.
 
+### 2026-07-15 - Lesson 004 First Attempt
+
+Score: 74 / 100
+
+- Correctness: 34 / 40 - the script runs, helper functions are in a separate module, imports work, numbering starts at 1, and status counting is used twice. The unrelated circle helper uses an incorrect value for pi.
+- Readability: 15 / 20 - the files are understandable, but output grammar, inconsistent capitalization, and one-letter rectangle parameters reduce clarity.
+- Pythonic style: 13 / 20 - the solution mixes named imports with `import study_helpers`, repeats the rectangle call, and has several spacing issues around commas, operators, dictionary colons, and function calls.
+- Edge cases: 7 / 10 - the required study helpers handle the supplied data, but unrelated geometry code adds an avoidable correctness risk.
+- Reflection and explanation: 5 / 10 - three comparison comments were included, but the claims about import keywords and PHP file extensions are inaccurate or too broad, and no separate familiar/strange reflection was submitted.
+
+Teacher decision: cleanup required before Lesson 005.
+
+### 2026-07-15 - Lesson 004 Second Attempt
+
+Score: 91 / 100
+
+- Correctness: 40 / 40 - the script runs and all module/import assignment behavior is correct.
+- Readability: 17 / 20 - the code is easy to follow, but the primary goal still describes Lesson 003 and some output grammar could be clearer.
+- Pythonic style: 15 / 20 - grouped imports are good, but spacing remains inconsistent around commas, dictionary colons, function calls, and top-level function definitions.
+- Edge cases: 9 / 10 - the required helpers behave correctly for the supplied data, and unrelated risky code has been removed.
+- Reflection and explanation: 10 / 10 - the revised comparison with JavaScript ES modules and PHP reuse patterns is clear and accurate for this stage.
+
+Teacher decision: final spacing polish required before acceptance.
+
+### 2026-07-15 - Lesson 004 Accepted
+
+Score: 97 / 100
+
+- Correctness: 40 / 40 - both files compile, the script runs, and all required module/import behavior works correctly.
+- Readability: 18 / 20 - module responsibilities are clear; a few output sentences could still be more natural.
+- Pythonic style: 19 / 20 - named imports, spacing, blank lines, and whitespace are clean and consistent.
+- Edge cases: 10 / 10 - required helpers behave correctly for the supplied data without unrelated logic.
+- Reflection and explanation: 10 / 10 - the JavaScript and PHP comparisons are accurate and clearly expressed.
+
+Teacher decision: Lesson 004 accepted. Move to Lesson 005.
+
+### 2026-07-15 - Lesson 005 First Attempt
+
+Score: 82 / 100
+
+- Correctness: 40 / 40 - the script runs and correctly demonstrates defaults, a keyword argument, a seven-day total, a fourteen-day date, module scope, and an entry-point guard.
+- Readability: 16 / 20 - the flow is clear, but the study message omits the `minutes` unit and some wording and capitalization need polish.
+- Pythonic style: 13 / 20 - import spacing/order, blank-line spacing, trailing whitespace, and parentheses around the `if` condition should be corrected.
+- Edge cases: 8 / 10 - the functions accept override values correctly, but no input validation is expected at this stage.
+- Reflection and explanation: 5 / 10 - three comments are present, but the JavaScript/PHP/Python comparisons need more precise wording and the separate familiar/strange reflection is missing.
+
+Teacher decision: cleanup required before Lesson 005 can be accepted.
+
+### 2026-07-15 - Lesson 005 Accepted
+
+Score: 96 / 100
+
+- Correctness: 40 / 40 - all required calculations, defaults, keyword arguments, date handling, and entry-point behavior work correctly.
+- Readability: 18 / 20 - names and output are clear; a couple of output phrases could be more concise.
+- Pythonic style: 19 / 20 - imports, function spacing, keyword arguments, constants, and the entry-point guard follow Python conventions.
+- Edge cases: 9 / 10 - override values work correctly; validation is intentionally deferred to the errors lesson.
+- Reflection and explanation: 10 / 10 - the comparison with `console.log()` and the reaction to Python's function spacing are clear and relevant.
+
+Teacher decision: Lesson 005 accepted. Phase 2 is complete. Move to Lesson 006.
+
 ## Current Assignment
 
-Lesson 004 is assigned in `PYTHON_LEARNING_INSTRUCTIONS.md`.
+Lesson 006 is assigned in `PYTHON_LEARNING_INSTRUCTIONS.md`.
 
 Expected file:
 
 ```text
 lessons/
-  004_modules/
-    main.py
+  006_json_files/
+    study_report.py
+    study_sessions.json
 ```
 
-The next task focuses on moving reusable functions into another file and importing them into a main script.
+The next task focuses on reading structured data from JSON, processing it, and writing a JSON summary.
 
 ## Next Teacher Action
 
-After the learner submits Lesson 004, Codex should:
+After the learner submits Lesson 006, Codex should:
 
 - run or inspect the submitted script
 - evaluate it using the rubric
 - update this progress file with the result
-- assign corrections or Lesson 005
+- assign corrections or Lesson 007

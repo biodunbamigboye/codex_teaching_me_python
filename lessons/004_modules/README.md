@@ -1,6 +1,6 @@
 # Lesson 004: Modules And Imports
 
-Status: Assigned
+Status: Accepted
 
 Phase: Phase 2 - Functions And Modules
 
@@ -58,35 +58,49 @@ python3 lessons/004_modules/main.py
 Result:
 
 ```text
-Pending submission.
+My Daily minutes is 45
+My Weekly work time is 315
+Here is a formatted version of a topic: 1. introduction - done - beginner
+Here is a formatted version of a topic: 2. Variables - done - beginner
+Here is a formatted version of a topic: 3. functions - in_progress - beginner
+Here is a formatted version of a topic: 4. loops - pending - intermediate
+Here is a formatted version of a topic: 5. logical gate - pending - intermediate
+We have 2 topics that is already completed
+We have 2 topics that is yet to be done
+Your daily pace is strong
 ```
 
 ## Attempt History
 
 | Attempt | Result | Teacher note |
 | --- | --- | --- |
-| First attempt | Pending | Submit the script after running it locally. |
+| First attempt | Cleanup required | The module split and imports work. Remove unrelated geometry code, use one import style, fix spacing, and replace inaccurate comparison comments. |
+| Second attempt | Final polish required | Import cleanup, scope cleanup, comments, and reflection are correct. Apply standard Python spacing in both files before acceptance. |
+| Accepted attempt | Accepted | Both files run and compile, imports and module boundaries are correct, and whitespace/style corrections are complete. |
 
 ## Accepted Version
 
-Accepted files: pending
+Accepted files: `main.py` and `study_helpers.py`
 
-Teacher score: pending
+Teacher score: 97 / 100
 
 Key reasons it passed:
 
-- Pending evaluation.
+- Reusable functions live in `study_helpers.py`.
+- `main.py` imports and calls the helpers without duplicating their logic.
+- Topic numbering, status counting, and output are correct.
+- Module comparison comments and reflection are accurate for this stage.
 
 ## Reflection
 
 Familiar:
 
-- Pending submission.
+- Python modules feel similar to JavaScript ES modules because a specific function can be imported from another file.
 
 Strange:
 
-- Pending submission.
+- PHP commonly organizes reusable code through namespaces, autoloading, `include`, or `require`, which feels different from Python's module imports.
 
 ## Next Step
 
-Write `study_helpers.py` and `main.py`, run the command, then submit the output and reflection for review.
+Move to Lesson 005: Default Arguments, Scope, And The Standard Library.
